@@ -1,7 +1,18 @@
-<% if(page.comments && theme.plugins.disqus_shortname){ %>
+<% if(page.comments && theme.plugins.gentie_productKey){ %>
     <div class="blog-post-comments">
-        <div id="disqus_thread">
-            <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <div id="disqus_thread">            
+            <div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
+            <script src="https://img1.cache.netease.com/f2e/tie/yun/sdk/loader.js"></script>
+            <script>
+                var cloudTieConfig = {
+                    url: document.location.href, 
+                    sourceId: "",
+                    productKey: "dd35274a0a4a4fa78803c58ca5824094",
+                    target: "cloud-tie-wrapper"
+                };
+                var yunManualLoad = true;
+                Tie.loader("aHR0cHM6Ly9hcGkuZ2VudGllLjE2My5jb20vcGMvbGl2ZXNjcmlwdC5odG1s", true);
+            </script>
         </div>
     </div>
 <% } %>

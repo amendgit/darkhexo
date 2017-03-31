@@ -2,15 +2,15 @@ nav:
   Home: /
   About: /about/
   Writing: /archives/
-  Projects: http://github.com/probberechts
+  Projects: http://github.com/amendgit
 
-projects_url: http://github.com/probberechts
+projects_url: http://github.com/amendgit
 
 customize:
     gravatar:
         email: 
     logo:
-        enabled: true
+        enabled: false
         width: 50
         height: 50
         url: /images/logo.png
@@ -27,11 +27,11 @@ customize:
         url: /images/apple-touch-icon.png
         gravator: false
     social_links:
-        github: http://github.com/probberechts/cactus-dark
+        github: http://github.com/amendgit
         twitter: /
         facebook: /
-        linkedin: /
-    post_count: 5
+        linkedin: http://www.linkedin.com/in/amendgit
+    post_count: 7
     highlight: rainbow
 
 # RSS
@@ -41,6 +41,7 @@ rss: false
 plugins:
     disqus_shortname: # Disqus Comments Shortname
     google_analytics: UA-86660611-1 # enter the tracking ID for your Google Analytics
+    gentie_productKey: dd35274a0a4a4fa78803c58ca5824094
 
 # Miscellaneous
 miscellaneous:
