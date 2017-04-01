@@ -37,11 +37,12 @@ $(document).ready(function(){
     $(window).on('scroll', function() {
       var topDistance = $("#menu > #nav").offset().top;
 
-      if ( $('#menu').css('visibility') != 'hidden' && topDistance < 50 ) {
-        $("#menu > #nav").show();
-      } else if ($('#menu').css('visibility') != 'hidden' && topDistance > 100) {
-        $("#menu > #nav").hide();
-      }
+      // disable nav autohide feature.
+      // if ( $('#menu').css('visibility') != 'hidden' && topDistance < 50 ) {
+      //   $("#menu > #nav").show();
+      // } else if ($('#menu').css('visibility') != 'hidden' && topDistance > 100) {
+      //   $("#menu > #nav").hide();
+      // }
 
       if ( ! $( "#menu-icon" ).is(":visible") && topDistance < 50 ) {
         $("#menu-icon-tablet").show();
